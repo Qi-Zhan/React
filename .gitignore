@@ -1,0 +1,9 @@
+/target
+dataset
+.vscode
+.cache
+*.py
+*.txt
+*.svg
+.DS_Store
+*.c

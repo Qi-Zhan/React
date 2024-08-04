@@ -1,0 +1,17 @@
+[package]
+name = "react"
+version = "0.1.0"
+edition = "2021"
+default-run = "react"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.76"
+lazy_static = "1.4.0"
+serde = { version = "1.0.193", features = ["derive"] }
+serde-jsonlines = "0.5.0"
+source-analysis = { path = "../source-analysis" }
+ir-analysis = { path = "../ir-analysis" }
+cfg-if = "1.0.0"
+clap = { version = "4.5.4", features = ["derive"] }

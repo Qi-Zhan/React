@@ -1,0 +1,23 @@
+[package]
+name = "ir-analysis"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+either = "1.9.0"
+zstd = "0.13"
+llvm-ir = { version = "0.10.0", features = ["llvm-14"] }
+petgraph = "0.6.4"
+source-analysis = { path = "../source-analysis" }
+cfg-if = "1.0.0"
+itertools = "0.13.0"
+pathfinding = "4.9.1"
+easy-smt = "0.2.1"
+anyhow = "1.0.83"
+
+[features]
+wsmt = []
+wrefine = []
+wrank = []

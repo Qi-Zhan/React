@@ -1,0 +1,11 @@
+[workspace]
+resolver = "2"
+
+members = [
+    "react",
+    "ir-analysis",
+    "source-analysis",
+]
+
+[profile.release]
+debug = true
