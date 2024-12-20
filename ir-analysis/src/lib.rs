@@ -461,7 +461,7 @@ impl IRAnalysis {
             .flat_map(|name| target_mod.get_function(name).map(|func| (name, func)))
             .collect::<HashMap<_, _>>();
         if exist_functions.is_empty() {
-            unreachable!("no function in test {}", target);
+            panic!("no function in test {}", target);
         }
         let mut functions_effects = HashMap::new();
         let mut functions_strings = HashMap::new();
